@@ -33,4 +33,10 @@ public interface EmployeeMapper {
      */
     //分页查询比较复杂，所以用xml映射文件方式实现
     Page<Employee> pageQuery(EmployeePageQueryDTO employeePageQueryDTO);
+
+    /**
+     * 根据主键动态修改属性
+     * @param employee
+     */
+    void update(Employee employee);
 }
