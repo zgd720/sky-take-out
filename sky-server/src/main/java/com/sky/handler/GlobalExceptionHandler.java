@@ -38,7 +38,7 @@ public class GlobalExceptionHandler {
             //依靠空格分割
             String[] split = message.split(" ");
             String username = split[2];
-            String msg = username + MessageConstant.AlREADY_EXIST;
+            String msg = username + MessageConstant.ALREADY_EXIST;
             return Result.error(msg);
         }else {
             return Result.error(MessageConstant.UNKNOWN_ERROR);
